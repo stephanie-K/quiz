@@ -1,0 +1,54 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+    <h1 class="govuk-heading-xl">
+     Quiz
+    </h1>
+    <form class="form" method="post">
+    {% from "govuk/components/radios/macro.njk" import govukRadios %}
+
+    {{ govukRadios({
+      name: "selectAnswer",
+      fieldset: {
+        legend: {
+          text: "Select your answer",
+          isPageHeading: true,
+          classes: "govuk-fieldset__legend--l"
+        }
+      },
+      items: [
+        {
+          value: "pm",
+          text: "Product Manager"
+        },
+        {
+          value: "sd",
+          text: "Service Designer"
+        },
+        {
+          value: "both",
+          text: "Both"
+        },
+        {
+          value: "unsure",
+          text: "Unsure"
+        }
+      ]
+    }) }}
+    {{ govukButton({
+      "text": "Show my answer"
+    }) }}
+
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}

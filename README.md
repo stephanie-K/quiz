@@ -3,6 +3,9 @@
 # How it's done
 The index page allows to select an answer. Each option selected is routed to a view which will show a coloured card on a mobile phone. <br>
 Each view for a card is using a layout I created in: app > views > layouts > **main-card.html** which uses the **unbranded** format for a page.<br>
+![screenshot of the index page, where you select an answer with 4 radio button options: product manager, service designer, both or unsure. You have a green button with the text: show your answer](/app/assets/quiz-index.jpg)
+![screenshot of the answer card for SD in big white text and burgundy background with a back link at the top](/app/assets/quiz-SD.jpg)
+![screenshot of the answer card for PM in big white text and blue background with a back link at the top](/app/assets/quiz-PM.jpg)
 
 ## Changing the CSS in unbranded.scss
 I've added lines of codes after line 18 in this file **unbranded.scss**
@@ -28,18 +31,4 @@ You will need to:
 
 
 # Information about the GOV.UK prototype kit
-Use this template to create new prototypes in DWP. This template is updated with every major version release of the GOVUK prototype kit.
-
-Best practice:<br>
-<br>
-Before making any changes to your code, open your prototype folder in terminal and Run: <br>npm audit <br>
-Use ther information provided in terminal to fix any vulnerabilities before pushing your changes<br>
-Keep package-lock.json under version control<br>
-Do not blindly update packages without review<br>
-Never connect to internal APIs or production systems<br>
-Never store or process real user data<br>
-Remove old or unused prototypes promptly<br>
-Document the purpose and owner of each prototype clearly<br>
-Avoid turning prototypes into live services<br>
-Do not allow open write access to external collaborators<br>
-<br>
+This is using the version 14.0.2 of the [GOVUK prototype kit](https://prototype-kit.service.gov.uk/).

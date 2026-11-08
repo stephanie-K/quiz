@@ -14,10 +14,10 @@ Each view for a card is using a layout I created in: app > views > layouts > **m
 I've added lines of codes after line 18 in this file **unbranded.scss**
 <br>
 To find the file: node_modules > govuk-prototype-kit > lib > assets > sass > unbranded.scss <br>
-This is to have more black space around the colours card.
+This is to have more black space around the colour cards.
 
 ## Changing the backlink
-I've just changed the colour of the chevron which was grey to black, on line 18 in the file:**_mixin.scss**
+I've just changed the colour of the chevron which was grey to white, on line 18 in the file:**_mixin.scss**
 <br>
 To find the file: node_modules > govuk-frontend > dist > govuk > components > back-link > _mixin.scss
 

@@ -3,9 +3,11 @@
 # How it's done
 The index page allows to select an answer. Each option selected is routed to a view which will show a coloured card on a mobile phone. <br>
 Each view for a card is using a layout I created in: app > views > layouts > **main-card.html** which uses the **unbranded** format for a page.<br>
-![screenshot of the index page, where you select an answer with 4 radio button options: product manager, service designer, both or unsure. You have a green button with the text: show your answer](/app/assets/quiz-index.jpg)
-![screenshot of the answer card for SD in big white text and burgundy background with a back link at the top](/app/assets/quiz-SD.jpg)
-![screenshot of the answer card for PM in big white text and blue background with a back link at the top](/app/assets/quiz-PM.jpg)
+<br><br>
+<img src="/app/assets/quiz-index.jpg" alt="screenshot of the index page, where you select an answer with 4 radio button options: product manager, service designer, both or unsure. You have a green button with the text: show your answer" width="300"/>
+<img src="/app/assets/quiz-SD.jpg" alt="screenshot of the answer card for SD in big white text and burgundy background with a back link at the top" width="300"/>
+<img src="/app/assets/quiz-PM.jpg" alt="screenshot of the answer card for PM in big white text and blue background with a back link at the top" width="300"/>
+<br>
 
 ## Changing the CSS in unbranded.scss
 I've added lines of codes after line 18 in this file **unbranded.scss**
